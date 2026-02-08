@@ -1,0 +1,103 @@
+/* Texture Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a0404;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cca43b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Specific Utilities */
+.text-rustic-maroon {
+    color: #4A0404;
+}
+
+.bg-rustic-maroon {
+    background-color: #4A0404;
+}
+
+.text-rustic-gold {
+    color: #CCA43B;
+}
+
+.bg-rustic-gold {
+    background-color: #CCA43B;
+}
+
+.text-rustic-cream {
+    color: #F5F5F0;
+}
+
+.bg-rustic-cream {
+    background-color: #F5F5F0;
+}
+
+.bg-rustic-dark {
+    background-color: #1A1A1A;
+}
+
+.text-rustic-dark {
+    color: #1A1A1A;
+}
+
+/* Selection */
+::selection {
+    background: #4A0404;
+    color: #F5F5F0;
+}
+
+/* Mobile Responsiveness Fixes */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Ensure no elements overflow on mobile */
+    * {
+        max-width: 100%;
+    }
+
+    /* Prevent horizontal scrolling */
+    html {
+        overflow-x: hidden;
+    }
+}
