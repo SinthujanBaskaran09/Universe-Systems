@@ -1,253 +1,146 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star One Hotel - Rustic Dining</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="description" content="Universe Systems - Professional Web Systems. Built at Speed. Priced for Growth.">
+    <title>Universe Systems | Professional Web Development</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'rustic-maroon': '#4A0404',
-                        'rustic-cream': '#F5F5F0',
-                        'rustic-gold': '#CCA43B',
-                        'rustic-dark': '#1A1A1A',
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
-                        sans: ['Lato', 'sans-serif'],
-                    },
-                    backgroundImage: {
-                        'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
-<body class="bg-rustic-cream text-rustic-dark font-sans antialiased overflow-x-hidden">
+<body>
+    <!-- Technical Grid Overlay -->
+    <div class="grid-overlay"></div>
 
-    <!-- Sticky Navigation (Minimal) -->
-    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center transition-all duration-300"
-        id="navbar">
-        <div class="text-sm md:text-xl font-serif font-bold tracking-wide md:tracking-widest text-rustic-maroon">Star
-            One Hotel & Coolbar</div>
-        <button onclick="scrollToMenu()"
-            class="text-xs uppercase tracking-[0.2em] font-bold hover:text-rustic-gold transition-colors">Menu</button>
-    </nav>
-
-    <!-- Section 1: Hero (Asymmetric Grid) -->
-    <section class="min-h-screen grid grid-cols-1 md:grid-cols-12 pt-20 px-4 md:px-12 pb-12 gap-4">
-
-        <!-- Left Text Block -->
-        <div class="md:col-span-5 flex flex-col justify-center z-10 relative">
-            <div class="absolute -top-20 -left-20 w-64 h-64 bg-rustic-maroon/5 rounded-full blur-3xl"></div>
-
-            <h2 class="text-sm font-bold tracking-[0.3em] text-rustic-gold mb-4 uppercase">Est. 2019</h2>
-            <h1 class="text-5xl md:text-8xl font-serif font-black text-rustic-maroon leading-[0.9] mb-8">
-                THE<br>ART<br>OF<br><span class="italic font-light text-rustic-gold">TASTE</span>
-            </h1>
-            <p
-                class="text-lg text-gray-600 max-w-sm font-light mb-10 leading-relaxed border-l-2 border-rustic-gold pl-6">
-                Where culinary tradition meets modern elegance. Experience the finest teas, treats, and kitchen classics
-                in a setting designed for the soul.
-            </p>
-            <div>
-                <button onclick="scrollToMenu()"
-                    class="bg-rustic-maroon text-rustic-cream px-10 py-4 font-serif italic text-lg hover:bg-rustic-dark transition-colors duration-300">
-                    Explore Menu
-                </button>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">UNIVERSE SYSTEMS</div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">SYSTEM ONLINE</span>
             </div>
         </div>
+    </header>
 
-        <!-- Right Image/Color Block -->
-        <div class="md:col-span-7 relative h-[50vh] md:h-auto mt-8 md:mt-0">
-            <div class="absolute inset-0 bg-rustic-maroon transform rotate-1 rounded-sm overflow-hidden shadow-2xl">
-                <!-- Using a placeholder for the Rustic Vibe since we can't generate images directly here without tool -->
-                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                    alt="Fine Dining Mood" class="w-full h-full object-cover opacity-80 mix-blend-screen">
-                <div class="absolute inset-0 bg-gradient-to-t from-rustic-maroon to-transparent opacity-60"></div>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">UNIVERSE SYSTEMS</h1>
+            <p class="hero-engineer">LEAD ENGINEER: SINTHUJAN BASKARAN</p>
+            <p class="hero-subtitle">HIGH-PERFORMANCE WEB ARCHITECTURE. BUILT AT SPEED. PRICED FOR GROWTH.</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="service-title">RAPID BUILD</h3>
+                <p class="service-description">24-72 hour delivery with precision execution</p>
             </div>
 
-            <!-- Floating badge -->
-            <div
-                class="absolute -bottom-6 -left-4 md:-bottom-10 md:-left-10 bg-rustic-cream p-4 md:p-8 shadow-xl max-w-[200px] md:max-w-xs hidden sm:block border border-rustic-maroon/10">
-                <p class="font-serif italic text-base md:text-2xl text-rustic-maroon leading-tight">"A symphony of
-                    flavors in every bite."</p>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8L4 12L8 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M16 8L20 12L16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M14 4L10 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="service-title">CORE ARCHITECTURE</h3>
+                <p class="service-description">Clean code optimized for speed and performance</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <path
+                            d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                            stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                </div>
+                <h3 class="service-title">GLOBAL SUPPORT</h3>
+                <p class="service-description">Direct 1-on-1 managed service worldwide</p>
             </div>
         </div>
     </section>
 
-    <!-- Section 2: Overlapping "About" (Magazine Style) -->
-    <section class="py-24 px-4 md:px-12 relative">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div class="order-2 md:order-1 relative">
-                <div class="w-full h-[500px] bg-gray-200 relative overflow-hidden shadow-lg transform -rotate-2">
-                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-                        alt="Coffee Detail" class="w-full h-full object-cover">
-                </div>
-                <div
-                    class="absolute -bottom-12 -right-12 w-48 h-48 bg-rustic-gold p-6 flex items-center justify-center text-center shadow-lg transform rotate-3 z-10">
-                    <span
-                        class="font-serif text-rustic-maroon font-bold text-xl leading-snug">Premium<br>Brewed<br>Daily</span>
-                </div>
-            </div>
-            <div class="order-1 md:order-2">
-                <h3 class="text-4xl md:text-5xl font-serif text-rustic-maroon mb-8">Coolbar &<br>Kitchen</h3>
-                <p class="text-gray-600 mb-6 font-light leading-relaxed">
-                    At Star One, we believe in the purity of ingredients. From our hand-picked tea leaves to our spicy,
-                    golden-fried rolls, every item is prepared with passion.
-                </p>
-                <p class="text-gray-600 mb-8 font-light leading-relaxed">
-                    Relax in our deep, warm ambiance and let time slow down as you savor the rustic flavors of
-                    tradition.
-                </p>
-                <div class="flex gap-4">
-                    <div class="h-px flex-1 bg-rustic-maroon/20 self-center"></div>
-                    <i data-lucide="utensils-crossed" class="text-rustic-maroon"></i>
-                    <div class="h-px flex-1 bg-rustic-maroon/20 self-center"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: The Menu (Maroon Block) -->
-    <section id="menu-section" class="bg-rustic-maroon text-rustic-cream py-24 px-4 md:px-12 relative overflow-hidden">
-        <!-- Decoration -->
-        <div
-            class="absolute top-0 right-0 w-96 h-96 border border-white/5 rounded-full -translate-y-1/2 translate-x-1/2">
-        </div>
-        <div
-            class="absolute bottom-0 left-0 w-64 h-64 border border-white/5 rounded-full translate-y-1/2 -translate-x-1/2">
-        </div>
-
-        <div class="max-w-6xl mx-auto relative z-10">
-            <h2 class="text-center font-serif text-4xl md:text-6xl mb-4 text-rustic-gold">The Collection</h2>
-            <p class="text-center text-white/60 text-sm tracking-[0.3em] uppercase mb-20">Curated for excellence</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-
-                <!-- Category: Refreshments -->
-                <div class="group">
-                    <h3 class="text-3xl font-serif border-b border-rustic-gold/30 pb-4 mb-8 italic">Refreshments</h3>
-                    <ul class="space-y-8">
-                        <li class="flex justify-between items-baseline group-hover:opacity-100 transition-opacity">
-                            <div>
-                                <h4 class="text-xl font-bold">Signature Coffee</h4>
-                                <p class="text-white/50 text-sm mt-1 font-light">Dark roasted, aromatic blend.</p>
-                            </div>
-                            <button onclick="orderItem('Signature Coffee')"
-                                class="text-xs uppercase tracking-widest text-rustic-gold hover:text-white transition-colors border-b border-rustic-gold pb-1">Order</button>
-                        </li>
-                        <li class="flex justify-between items-baseline group-hover:opacity-100 transition-opacity">
-                            <div>
-                                <h4 class="text-xl font-bold">Chilled Soda</h4>
-                                <p class="text-white/50 text-sm mt-1 font-light">Sparkling sweet refreshment.</p>
-                            </div>
-                            <button onclick="orderItem('Chilled Soda')"
-                                class="text-xs uppercase tracking-widest text-rustic-gold hover:text-white transition-colors border-b border-rustic-gold pb-1">Order</button>
-                        </li>
-                        <li class="flex justify-between items-baseline group-hover:opacity-100 transition-opacity">
-                            <div>
-                                <h4 class="text-xl font-bold">Royal Tea</h4>
-                                <p class="text-white/50 text-sm mt-1 font-light">Ceylon's finest brew.</p>
-                            </div>
-                            <button onclick="orderItem('Royal Tea')"
-                                class="text-xs uppercase tracking-widest text-rustic-gold hover:text-white transition-colors border-b border-rustic-gold pb-1">Order</button>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Category: Treats -->
-                <div class="group">
-                    <h3 class="text-3xl font-serif border-b border-rustic-gold/30 pb-4 mb-8 italic">Treats</h3>
-                    <ul class="space-y-8">
-                        <li class="flex justify-between items-baseline bg-white/5 p-4 -mx-4 rounded hover:bg-white/10 transition-colors cursor-pointer"
-                            onclick="orderItem('Assorted Chocolates')">
-                            <div>
-                                <h4 class="text-xl font-bold">Chocolates</h4>
-                                <p class="text-white/50 text-sm mt-1 font-light">Handcrafted sweetness.</p>
-                            </div>
-                            <i data-lucide="arrow-up-right" class="text-rustic-gold w-4 h-4"></i>
-                        </li>
-                        <li class="flex justify-between items-baseline bg-white/5 p-4 -mx-4 rounded hover:bg-white/10 transition-colors cursor-pointer"
-                            onclick="orderItem('Butter Biscuits')">
-                            <div>
-                                <h4 class="text-xl font-bold">Biscuits</h4>
-                                <p class="text-white/50 text-sm mt-1 font-light">Perfect tea companions.</p>
-                            </div>
-                            <i data-lucide="arrow-up-right" class="text-rustic-gold w-4 h-4"></i>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Category: Classics (With Price) -->
-                <div class="group relative">
-                    <div class="absolute inset-0 bg-black/20 transform md:scale-y-110 -z-10 rounded-sm"></div>
-                    <div class="p-6 h-full border border-white/10">
-                        <h3 class="text-3xl font-serif text-rustic-gold mb-8 text-center">Classics</h3>
-                        <div class="space-y-8">
-                            <!-- Item 1 -->
-                            <div class="text-center">
-                                <h4 class="text-2xl font-serif font-bold">Spicy Rolls</h4>
-                                <div class="w-12 h-px bg-white/30 mx-auto my-3"></div>
-                                <p class="text-white/60 text-sm mb-4">Golden fried, savory filling.</p>
-                                <div class="text-3xl font-serif text-rustic-gold mb-4">60 <span
-                                        class="text-sm text-white/50">LKR</span></div>
-                                <button onclick="orderItem('Rolls', 60)"
-                                    class="w-full py-3 bg-rustic-cream text-rustic-maroon font-bold text-sm tracking-widest hover:bg-rustic-gold transition-colors">ADD
-                                    TO ORDER</button>
-                            </div>
-
-                            <!-- Item 2 -->
-                            <div class="text-center pt-8 border-t border-white/10">
-                                <h4 class="text-2xl font-serif font-bold">Parotta</h4>
-                                <div class="w-12 h-px bg-white/30 mx-auto my-3"></div>
-                                <p class="text-white/60 text-sm mb-4">Flaky, buttery layers.</p>
-                                <div class="text-3xl font-serif text-rustic-gold mb-4">50 <span
-                                        class="text-sm text-white/50">LKR</span></div>
-                                <button onclick="orderItem('Parotta', 50)"
-                                    class="w-full py-3 bg-rustic-cream text-rustic-maroon font-bold text-sm tracking-widest hover:bg-rustic-gold transition-colors">ADD
-                                    TO ORDER</button>
-                            </div>
-                        </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="about-text">
+                <p>Universe Systems is a professional web development organization specializing in high-performance web
+                    architecture. We deliver enterprise-grade solutions with rapid turnaround times.</p>
+                <p>Our approach combines clean code principles with modern development practices to create fast,
+                    scalable, and maintainable web systems.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">24-72H</div>
+                        <div class="stat-label">Delivery Time</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Clean Code</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
                     </div>
                 </div>
-
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">WHATSAPP</div>
+                    <a href="https://wa.me/94769784907?text=Universe%20Systems%20Service%20Inquiry" class="contact-link"
+                        target="_blank" rel="noopener noreferrer">
+                        +94 76 978 4907
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">SERVICE MANAGED BY</div>
+                    <div class="contact-value">Sinthujan Baskaran</div>
+                </div>
+            </div>
+            <a href="https://wa.me/94769784907?text=Universe%20Systems%20Service%20Inquiry" class="cta-button"
+                target="_blank" rel="noopener noreferrer">
+                <span class="cta-text" id="ctaText"></span>
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-rustic-dark py-16 px-6 border-t border-white/10 text-center relative overflow-hidden">
-        <h2
-            class="text-[80px] md:text-[250px] font-serif font-bold text-white/5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none whitespace-nowrap">
-            STAR ONE</h2>
-
-        <div class="relative z-10 max-w-lg mx-auto">
-            <p class="text-rustic-gold tracking-[0.5em] text-xs font-bold mb-8 uppercase">Reservations & Orders</p>
-            <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
-                <button onclick="callNumber()"
-                    class="border border-white/20 px-8 py-4 text-white hover:border-rustic-gold hover:text-rustic-gold transition-colors flex items-center justify-center gap-3">
-                    <i data-lucide="phone" class="w-4 h-4"></i>
-                    <span>+94 77 444 5456</span>
-                </button>
-                <button onclick="orderItem('General Inquiry')"
-                    class="bg-rustic-gold text-rustic-dark px-8 py-4 font-bold hover:bg-white transition-colors flex items-center justify-center gap-3">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    <span>WhatsApp Us</span>
-                </button>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-metadata">© 2026 UNIVERSE SYSTEMS</div>
             </div>
-            <p class="text-white/30 text-xs tracking-widest">&copy; 2026 Star One Hotel. Minimalist Rustic Design.</p>
+            <div class="footer-right">
+                <div class="footer-clock" id="systemClock">00:00:00 IST</div>
+            </div>
         </div>
     </footer>
 
